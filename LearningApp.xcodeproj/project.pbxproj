@@ -12,6 +12,9 @@
 		DA32A02E26C95026000E50BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA32A02D26C95026000E50BD /* Assets.xcassets */; };
 		DA32A03126C95026000E50BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA32A03026C95026000E50BD /* Preview Assets.xcassets */; };
 		DA32A03E26C950F3000E50BD /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32A03D26C950F3000E50BD /* ContentModel.swift */; };
+		DA32A04126C9571E000E50BD /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = DA32A03F26C9571E000E50BD /* style.html */; };
+		DA32A04226C9571E000E50BD /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DA32A04026C9571E000E50BD /* data.json */; };
+		DA32A04426C959D0000E50BD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32A04326C959D0000E50BD /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DA32A03026C95026000E50BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA32A03226C95026000E50BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA32A03D26C950F3000E50BD /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		DA32A03F26C9571E000E50BD /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
+		DA32A04026C9571E000E50BD /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		DA32A04326C959D0000E50BD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		DA32A03A26C950A3000E50BD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA32A04026C9571E000E50BD /* data.json */,
+				DA32A03F26C9571E000E50BD /* style.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 		DA32A03B26C950A9000E50BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA32A04326C959D0000E50BD /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,8 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA32A04126C9571E000E50BD /* style.html in Resources */,
 				DA32A03126C95026000E50BD /* Preview Assets.xcassets in Resources */,
 				DA32A02E26C95026000E50BD /* Assets.xcassets in Resources */,
+				DA32A04226C9571E000E50BD /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +195,7 @@
 				DA32A02C26C95024000E50BD /* HomeView.swift in Sources */,
 				DA32A02A26C95024000E50BD /* LearningApp.swift in Sources */,
 				DA32A03E26C950F3000E50BD /* ContentModel.swift in Sources */,
+				DA32A04426C959D0000E50BD /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
