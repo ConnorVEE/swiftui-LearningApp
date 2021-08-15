@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA32A02A26C95024000E50BD /* LearningAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32A02926C95024000E50BD /* LearningAppApp.swift */; };
-		DA32A02C26C95024000E50BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32A02B26C95024000E50BD /* ContentView.swift */; };
+		DA32A02A26C95024000E50BD /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32A02926C95024000E50BD /* LearningApp.swift */; };
+		DA32A02C26C95024000E50BD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32A02B26C95024000E50BD /* HomeView.swift */; };
 		DA32A02E26C95026000E50BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA32A02D26C95026000E50BD /* Assets.xcassets */; };
 		DA32A03126C95026000E50BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA32A03026C95026000E50BD /* Preview Assets.xcassets */; };
+		DA32A03E26C950F3000E50BD /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32A03D26C950F3000E50BD /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA32A02626C95024000E50BD /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA32A02926C95024000E50BD /* LearningAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningAppApp.swift; sourceTree = "<group>"; };
-		DA32A02B26C95024000E50BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA32A02926C95024000E50BD /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
+		DA32A02B26C95024000E50BD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DA32A02D26C95026000E50BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA32A03026C95026000E50BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA32A03226C95026000E50BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA32A03D26C950F3000E50BD /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,12 @@
 		DA32A02826C95024000E50BD /* LearningApp */ = {
 			isa = PBXGroup;
 			children = (
-				DA32A02926C95024000E50BD /* LearningAppApp.swift */,
-				DA32A02B26C95024000E50BD /* ContentView.swift */,
+				DA32A02926C95024000E50BD /* LearningApp.swift */,
+				DA32A03826C95099000E50BD /* Views */,
+				DA32A03926C9509E000E50BD /* ViewModels */,
+				DA32A03B26C950A9000E50BD /* Models */,
+				DA32A03A26C950A3000E50BD /* Resources */,
+				DA32A03C26C950C5000E50BD /* Helpers */,
 				DA32A02D26C95026000E50BD /* Assets.xcassets */,
 				DA32A03226C95026000E50BD /* Info.plist */,
 				DA32A02F26C95026000E50BD /* Preview Content */,
@@ -67,6 +73,43 @@
 				DA32A03026C95026000E50BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA32A03826C95099000E50BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA32A02B26C95024000E50BD /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA32A03926C9509E000E50BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DA32A03D26C950F3000E50BD /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA32A03A26C950A3000E50BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA32A03B26C950A9000E50BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA32A03C26C950C5000E50BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA32A02C26C95024000E50BD /* ContentView.swift in Sources */,
-				DA32A02A26C95024000E50BD /* LearningAppApp.swift in Sources */,
+				DA32A02C26C95024000E50BD /* HomeView.swift in Sources */,
+				DA32A02A26C95024000E50BD /* LearningApp.swift in Sources */,
+				DA32A03E26C950F3000E50BD /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
