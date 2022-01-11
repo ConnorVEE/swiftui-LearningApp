@@ -19,7 +19,6 @@ struct HomeView: View {
                 Text("What do you want to do today?")
                     .padding(.leading, 20)
                 
-                
                 ScrollView {
                     
                     LazyVStack {
@@ -31,9 +30,7 @@ struct HomeView: View {
                                 NavigationLink(
                                     destination:
                                         ContentView()
-                                        .onAppear(perform: {
-                                            model.beginModule(module.id)
-                                        }),
+                                            .onAppear(perform: {model.beginModule(module.id)}),
                                     tag: module.id,
                                     selection: $model.currentContentSelected,
                                     label: {
@@ -45,7 +42,9 @@ struct HomeView: View {
                                 
                                 // Test Card
                                 HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Lessons", time: module.test.time)
+                                
                             }
+                            
                         }
                         
                     }
@@ -53,10 +52,12 @@ struct HomeView: View {
                     .accentColor(.black)
                     
                 }
+                
             }
             .navigationTitle("Get Started")
             
         }
+        .navigationViewStyle(.stack)
         
     }
 }
