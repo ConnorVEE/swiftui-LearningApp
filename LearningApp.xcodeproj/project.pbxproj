@@ -22,6 +22,7 @@
 		DA6AF37326D99435006FCCD5 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AF37226D99435006FCCD5 /* RectangleCard.swift */; };
 		DA8D434B26CC25D3004C5537 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D434A26CC25D3004C5537 /* ContentViewRow.swift */; };
 		DA9D859D26CBFAC3009801D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D859C26CBFAC3009801D9 /* ContentView.swift */; };
+		DAB7A13B278DDA1400B680D9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A13A278DDA1400B680D9 /* TestView.swift */; };
 		DAE06A4726D89C01000A8C11 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE06A4626D89C01000A8C11 /* CodeTextView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		DA6AF37226D99435006FCCD5 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		DA8D434A26CC25D3004C5537 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 		DA9D859C26CBFAC3009801D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DAB7A13A278DDA1400B680D9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DAE06A4626D89C01000A8C11 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				DA9D859C26CBFAC3009801D9 /* ContentView.swift */,
 				DA8D434A26CC25D3004C5537 /* ContentViewRow.swift */,
 				DA52D6E726CE940500B1A1F2 /* ContentDetailView.swift */,
+				DAB7A13A278DDA1400B680D9 /* TestView.swift */,
 				DAE06A4626D89C01000A8C11 /* CodeTextView.swift */,
 				DA6AF37226D99435006FCCD5 /* RectangleCard.swift */,
 			);
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB7A13B278DDA1400B680D9 /* TestView.swift in Sources */,
 				DA32A02C26C95024000E50BD /* HomeView.swift in Sources */,
 				DA31828C26CB687300973BB2 /* HomeViewRow.swift in Sources */,
 				DA9D859D26CBFAC3009801D9 /* ContentView.swift in Sources */,

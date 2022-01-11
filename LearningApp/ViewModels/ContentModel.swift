@@ -20,11 +20,16 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+    // Current Question
+    @Published var currentQuestion: Question?
+    var currentQuestionIndex = 0
+    
     // Current lesson explanation
-    @Published var lessonDescription = NSAttributedString()
+    @Published var codeText = NSAttributedString()
     
     // Current selected content and test
     @Published var currentContentSelected:Int?
+    @Published var currentTestSelected:Int?
     
     var styleData: Data?
     
@@ -101,7 +106,7 @@ class ContentModel: ObservableObject {
         
         // Set the current lesson
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
-        lessonDescription = addStyling(currentLesson!.explanation)
+        codeText = addStyling(currentLesson!.explanation)
     }
     
     func nextLesson() {
@@ -114,7 +119,7 @@ class ContentModel: ObservableObject {
             
             // Set the current lesson property
             currentLesson = currentModule!.content.lessons[currentLessonIndex]
-            lessonDescription = addStyling(currentLesson!.explanation)
+            codeText = addStyling(currentLesson!.explanation)
         } else {
             // Reset the lesson state
             currentLessonIndex = 0
@@ -127,6 +132,24 @@ class ContentModel: ObservableObject {
         
        return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
         
+    }
+    
+    func beginTest(_ moduleId:Int) {
+        
+        // Set current module
+        beginModule(moduleId)
+        
+        // Set the current question index
+        currentQuestionIndex = 0
+        
+        // If there are questions, set the current one to the first one
+        if currentModule?.test.questions.count ?? 0 > 0 {
+            
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+            // Set the question content
+            codeText = addStyling(currentQuestion!.content)
+            
+        }
     }
     
     // MARK: Code styling
